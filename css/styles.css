@@ -41,9 +41,6 @@
     text-align: center;
     font-weight: bold;
   }
-  /* ========================= */
-/* RESPONSIVO */
-/* ========================= */
 
 @media (max-width: 768px) {
 
@@ -51,23 +48,25 @@
         padding:10px;
         background-position:center;
     }
-
-    .container{
-        flex-direction:column;
-        width:100%;
-        max-width:100%;
+    .container {
+    display: flex;
+    gap: 20px;
+}
+@media (max-width: 768px) {
+    .album,
+    .movie {
+        width: 80px;
     }
+}
 
     .left-column,
     .right-column{
         width:100%;
         padding:0;
     }
-
-    .window{
-        width:100%;
-        box-sizing:border-box;
-    }
+    .window {
+    width: min(100%, 400px);
+}
 
     .profile-pic img{
         width:90px;
